@@ -1,0 +1,69 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #003f5c;
+    color: white;
+}
+
+.btn {
+    background-color: #58508d;
+    color: white;
+    cursor: pointer;
+    padding: 12px 32px;
+}
+
+.btn:hover {
+    background-color: #bc5090;
+}
+
+.image-container {
+    position: relative;
+    aspect-ratio: 1/1;
+    --length: min(96vw, 720px);
+    width: var(--length);
+    height: var(--length);
+    margin-bottom: 1rem;
+}
+
+.background,.ears, .eyes, .hair, .leg, .mouth, .neck, .nose {
+    max-width: 100%;
+    position: absolute;
+}
+
+.image-container .ears {
+    z-index: 10;
+}
+
+.image-container .eyes {
+    z-index: 40;
+}
+
+.image-container .hair {
+    z-index: 30;
+}
+
+.image-container .leg {
+    z-index: 40;
+}
+
+.image-container .mouth {
+    z-index: 40;
+}
+
+.image-container .neck {
+    z-index: 10;
+}
+
+.image-container .nose {
+    z-index: 30;
+}
