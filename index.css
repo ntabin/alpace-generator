@@ -29,15 +29,21 @@ body {
 .image-container {
     position: relative;
     aspect-ratio: 1/1;
-    --length: min(96vw, 720px);
+    --length: min(96vw, 400px);
     width: var(--length);
     height: var(--length);
     margin-bottom: 1rem;
+    border: 8px solid #ff6361;
+    border-radius: 8px;
 }
 
-.background,.ears, .eyes, .hair, .leg, .mouth, .neck, .nose {
+.background,.ears, .eyes, .hair, .leg, .mouth, .neck, .nose, .accessory {
     max-width: 100%;
     position: absolute;
+}
+
+.image-container .accessory {
+    z-index: 40;
 }
 
 .image-container .ears {
@@ -66,4 +72,17 @@ body {
 
 .image-container .nose {
     z-index: 30;
+}
+
+.radio-container {
+    display: inline;
+    text-wrap: nowrap;
+}
+
+.d-none {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+
 }

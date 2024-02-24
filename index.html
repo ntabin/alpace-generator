@@ -12,21 +12,172 @@
     <div class="container">
         <h1>Alpaca Generator</h1>
 
-        <div class="image-container">
-            <img alt="background" class="background" src="./assets/alpaca/backgrounds/blue50.png" />
-            <img alt="ears" class="ears" src="./assets/alpaca/ears/default.png" />
-            <img alt="eyes" class="eyes" src="./assets/alpaca/eyes/default.png" />
-            <img alt="hair" class="hair" src="./assets/alpaca/hair/default.png" />
-            <img alt="leg" class="leg" src="./assets/alpaca/leg/default.png" />
-            <img alt="mouth" class="mouth" src="./assets/alpaca/mouth/default.png" />
-            <img alt="neck" class="neck" src="./assets/alpaca/neck/default.png" />
-            <img alt="nose" class="nose" src="./assets/alpaca/nose.png" />
-        </div>
+        <section class="image-container">
+            <img alt="accessory" class="accessory" data-category="accessories" src="./assets/alpaca/accessories/earings.png" />
+            <img alt="background" class="background" data-category="backgrounds" src="./assets/alpaca/backgrounds/blue50.png" />
+            <img alt="ears" class="ears" data-category="ears" src="./assets/alpaca/ears/default.png" />
+            <img alt="eyes" class="eyes" data-category="eyes" src="./assets/alpaca/eyes/default.png" />
+            <img alt="hair" class="hair" data-category="hair" src="./assets/alpaca/hair/default.png" />
+            <img alt="leg" class="leg" data-category="legs" src="./assets/alpaca/leg/default.png" />
+            <img alt="mouth" class="mouth" data-category="mouths" src="./assets/alpaca/mouth/default.png" />
+            <img alt="neck" class="neck" data-category="neck" src="./assets/alpaca/neck/default.png" />
+            <img alt="nose" class="nose" data-category="nose" src="./assets/alpaca/nose.png" />
+        </section>
 
-        <div>
+        <section>
             <button class="btn">Random 🎲</button>
             <button class="btn">Save 📂</button>
-        </div>
+        </section>
+
+        <section>
+            <h2>Accessorize the Alpaca's</h2>
+            <section id="categoryContainer">
+                <div class="radio-container">
+                    <input class="option" type="radio" name="category" value="hair" id="hairRadio" checked>
+                    <label for="hairRadio">Hair</label>
+                </div>
+                
+                <div class="radio-container">
+                    <input class="option" type="radio" name="category" value="ears" id="earsRadio">
+                    <label for="earsRadio">Ears</label>
+                </div>
+
+                <div class="radio-container">
+                    <input class="option" type="radio" name="category" value="eyes" id="eyesRadio">
+                    <label for="eyesRadio">Eyes</label>
+                </div>
+                
+                <div class="radio-container">
+                    <input class="option" type="radio" name="category" value="mouth" id="mouthRadio">
+                    <label for="mouthRadio">Mouth</label>
+                </div>
+                
+                <div class="radio-container">
+                    <input class="option" type="radio" name="category" value="neck" id="neckRadio">
+                    <label for="neckRadio">Neck</label>
+                </div>
+                
+
+                <div class="radio-container">
+                    <input class="option" type="radio" name="category" value="leg" id="legRadio">
+                    <label for="legRadio">Leg</label>
+                </div>
+                
+
+                <div class="radio-container">
+                    <input class="option" type="radio" name="category" value="accessories" id="accessoriesRadio">
+                    <label for="accessoriesRadio">Accessories</label>
+                </div>
+
+                <div class="radio-container">
+                    <input class="option" type="radio" name="category" value="backgrounds" id="backgroundRadio">
+                    <label for="backgroundRadio">Background</label>
+                </div>
+                
+            </section>
+        </section>
+
+        <section>
+            <h2>Style</h2>
+            <section id="optionsContainer">
+                <div class="radio-container">
+                    <input class="option" type="radio" name="accessories" value="earings.png" id="accessoryEaringsRadio" checked>
+                    <label for="accessoryEaringsRadio">Earings</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="accessories" value="flower.png" id="accessoryFlowerRadio">
+                    <label for="accessoryFlowerRadio">Flower</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="accessories" value="glasses.png" id="accessoryGlassesRadio">
+                    <label for="accessoryGlassesRadio">Glasses</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="accessories" value="headphone.png" id="accessoryHeadphoneRadio">
+                    <label for="accessoryHeadphoneRadio">Headphone</label>
+                </div>
+
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="blue50.png" id="backgroundBlue50Radio" checked>
+                    <label for="backgroundBlue50Radio">Blue 50</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="blue60.png" id="backgroundBlue60Radio">
+                    <label for="backgroundBlue60Radio">Blue 60</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="blue70.png" id="backgroundBlue70Radio">
+                    <label for="backgroundBlue70Radio">Blue 70</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="darkblue30.png" id="backgroundDarkBlue30Radio">
+                    <label for="backgroundDarkBlue30Radio">Dark Blue 30</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="darkblue50.png" id="backgroundDarkBlue50Radio">
+                    <label for="backgroundDarkBlue50Radio">Dark Blue 50</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="darkblue70.png" id="backgroundDarkBlue70Radio">
+                    <label for="backgroundDarkBlue70Radio">Dark Blue 70</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="green50.png" id="backgroundGreen50Radio">
+                    <label for="backgroundGreen50Radio">Green 50</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="green60.png" id="backgroundGreen60Radio">
+                    <label for="backgroundGreen60Radio">Green 60</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="green70.png" id="backgroundGreen70Radio">
+                    <label for="backgroundGreen70Radio">Green 70</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="grey40.png" id="backgroundGrey40Radio">
+                    <label for="backgroundGrey40Radio">Gray 40</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="grey70.png" id="backgroundGrey70Radio">
+                    <label for="backgroundGrey70Radio">Gray 70</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="grey80.png" id="backgroundGrey80Radio">
+                    <label for="backgroundGrey80Radio">Gray 80</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="red50.png" id="backgroundRed50Radio">
+                    <label for="backgroundRed50Radio">Red 50</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="red60.png" id="backgroundRed60Radio">
+                    <label for="backgroundRed60Radio">Red 60</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="red70.png" id="backgroundRed70Radio">
+                    <label for="backgroundRed70Radio">Red 70</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="yellow50.png" id="backgroundYellow50Radio">
+                    <label for="backgroundYellow50Radio">Yellow 50</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="yellow60.png" id="backgroundYellow60Radio">
+                    <label for="backgroundYellow60Radio">Yellow 60</label>
+                </div>
+                <div class="radio-container">
+                    <input class="option" type="radio" name="backgrounds" value="yellow70.png" id="backgroundYellow70Radio">
+                    <label for="backgroundYellow70Radio">Yellow 70</label>
+                </div>
+
+                <div class="radio-container">
+                    <input class="option" type="radio" name="ears" value="default.png" id="earsDefaultRadio">
+                    <label for="earsDefaultRadio">Default</label>
+                </div>
+                
+
+            </section>
+        </section>
 
 
 
