@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -11,9 +16,9 @@ html {
 }
 
 body {
-    background-color: #003f5c;
-    color: white;
+    font-family: "Press Start 2P", system-ui;
 }
+
 
 .btn {
     background-color: #58508d;
@@ -26,19 +31,15 @@ body {
     background-color: #bc5090;
 }
 
-.image-container-container {
-    margin-bottom: 1rem;
-    border: 8px solid #ff6361;
-    border-radius: 8px;
-}
-
 .image-container {
     position: relative;
     aspect-ratio: 1/1;
-    --length: min(88vw, 400px);
+    --length: min(80vw, 400px);
     width: var(--length);
     height: var(--length);
-    
+    margin-bottom: 1rem;
+    border: 8px solid #ff6361;
+    border-radius: 8px;
 }
 
 .background,.ears, .eyes, .hair, .leg, .mouth, .neck, .nose, .accessory {
@@ -87,30 +88,9 @@ body {
     display: none !important;
 }
 
-.container {
-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 750px;
-  }
-}
 @media (min-width: 992px) {
-  .container {
-    max-width: 970px;
-  }
-
   .contents {
     display: flex;
     gap: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
   }
 }
